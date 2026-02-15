@@ -17,11 +17,6 @@
   },
   "devDependencies": {
     "@types/react": "^19.2.14",
-    "@typescript-eslint/eslint-plugin": "^8.55.0",
-    "@typescript-eslint/parser": "^8.55.0",
-    "eslint": "^9.31.0",
-    "eslint-plugin-n": "^17.24.0",
-    "eslint-plugin-react": "^7.37.5",
     "oxlint": "^1.47.0"
   }
 }

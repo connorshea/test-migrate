@@ -1,14 +1,8 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": [
-    "react",
-    "typescript"
-  ],
+  "plugins": ["react", "typescript"],
   "categories": {
     "correctness": "off"
-  },
-  "env": {
-    "builtin": true
   },
   "rules": {
     "react/no-multi-comp": "error",
@@ -20,12 +14,10 @@
         "subdir/**/*.ts",
         "subdir/**/*.tsx"
       ],
+      "plugins": ["node"],
       "rules": {
         "node/global-require": "error"
       },
-      "plugins": [
-        "node"
-      ]
     }
   ]
 }
