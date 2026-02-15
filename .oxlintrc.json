@@ -1,0 +1,30 @@
+{
+  // migrated config.
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": [
+    "react"
+  ],
+  "categories": {
+    "correctness": "off"
+  },
+  "env": {
+    "builtin": true
+  },
+  "rules": {
+    "react/no-multi-comp": "error"
+  },
+  "overrides": [
+    {
+      "files": [
+        "subdir/**/*.ts",
+        "subdir/**/*.tsx"
+      ],
+      "rules": {
+        "node/global-require": "error"
+      },
+      "plugins": [
+        "node"
+      ]
+    }
+  ]
+}
