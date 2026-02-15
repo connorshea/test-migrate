@@ -7,7 +7,8 @@ import { defineConfig } from 'eslint/config';
 export default defineConfig([
   {
     plugins: {
-      react: react
+      react: react,
+      '@typescript-eslint': typescript
     },
     languageOptions: {
       parser: parser,
@@ -20,6 +21,7 @@ export default defineConfig([
     },
     rules: {
       'react/no-multi-comp': 'error',
+      '@typescript-eslint/no-inferrable-types': 'error'
     },
     settings: {
       react: {
@@ -30,8 +32,7 @@ export default defineConfig([
   {
     files: ['subdir/**/*.ts', 'subdir/**/*.tsx'],
     plugins: {
-      node: node,
-      '@typescript-eslint': typescript
+      node: node
     },
     rules: {
       'node/global-require': 'error'

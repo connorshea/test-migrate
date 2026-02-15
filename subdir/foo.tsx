@@ -1,6 +1,6 @@
 import React from 'react';
 
-// This will trigger the no-multi-comp rule in ESLint and Oxlint if things are working correctly.
+// This file will trigger the no-multi-comp rule in both ESLint and Oxlint.
 const ComponentOne = () => {
   return (
     <div>
@@ -18,5 +18,9 @@ const ComponentTwo = () => {
     </div>
   );
 };
+
+// This triggers no-inferrable-type.
+// It also triggers no-unused-vars, despite that rule not being enabled in any way?
+const a: number = 5;
 
 export { ComponentOne, ComponentTwo };

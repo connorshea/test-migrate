@@ -1,8 +1,8 @@
 {
-  // migrated config
   "$schema": "./node_modules/oxlint/configuration_schema.json",
   "plugins": [
-    "react"
+    "react",
+    "typescript"
   ],
   "categories": {
     "correctness": "off"
@@ -11,7 +11,8 @@
     "builtin": true
   },
   "rules": {
-    "react/no-multi-comp": "error"
+    "react/no-multi-comp": "error",
+    "@typescript-eslint/no-inferrable-types": "error"
   },
   "overrides": [
     {
